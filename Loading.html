@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="7, url=./Employee.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Application Form</title>
+    <link rel="icon" href="./Icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <body class="parent">
+        <div>
+            <canvas id="canvas" width="1550" height="450"></canvas>
+        </div>
+        <script src="https://unpkg.com/rive-js@0.7.6/dist/rive.min.js"></script>
+    </body>
+    <center>
+        <h1>&emsp; Loading...</h1>
+    </center>
+
+    <script src="https://unpkg.com/rive-js@0.7.6/dist/rive.min.js"></script>
+    <script>
+        // autoplays the first animation in the default artboard
+        new rive.Rive({
+            src: 'https://public.rive.app/community/runtime-files/425-786-circular-progress-indicator.riv',
+            canvas: document.getElementById('canvas'),
+            autoplay: true,
+            layout: new rive.Layout({
+                fit: 'none',
+                alignment: 'center',
+            }),
+        })
+    </script>
+
+</body>
+
+</html>
+
+<style>
+    body {
+        text-align: center;
+        margin: 0px;
+        border: 0px;
+        overflow: hidden;
+        background-color: rgba(47, 47, 47, 0.990);
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgb(95, 243, 194);
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: 10;
+    }
+    
+    @keyframes example {
+        0% {
+            color: rgb(86, 214, 172);
+            ;
+        }
+        25% {
+            color: rgb(128, 197, 231);
+        }
+        50% {
+            color: rgb(86, 214, 172);
+        }
+        75% {
+            color: rgb(128, 197, 231);
+        }
+        100% {
+            color: rgb(86, 214, 172);
+        }
+    }
+    
+    script {
+        animation-name: rive;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+    }
+</style>
